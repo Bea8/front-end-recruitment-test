@@ -74,4 +74,9 @@
   }
 
   // Your custom JavaScript goes here
+  document.getElementById('clone').addEventListener('click', function() {
+    let image = document.getElementById('Bacon');
+    let cln = image.cloneNode(true);
+    document.getElementById('image-section').appendChild(cln);
+  });
 })();
